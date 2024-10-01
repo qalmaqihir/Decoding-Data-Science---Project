@@ -1,0 +1,16 @@
+.stSidebar {
+    background-color: #f4f4f4;
+    border-right: 1px solid #dddddd;
+}
+
+.stButton > button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.stHeader {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}

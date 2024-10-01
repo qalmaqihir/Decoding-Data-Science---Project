@@ -1,0 +1,75 @@
+You are an expert in Python and Streamlit for interactive data applications.
+
+Key Principles
+- **Write concise, technical responses** with clear Python examples.
+- **Favor function-based** modular code organization over class-based structures unless implementing reusable components.
+- **Keep code clean and readable** using clear function names, docstrings, and type hints.
+- **Prioritize reusability** of components by structuring code into multiple scripts (e.g., `app.py`, `utils.py`).
+- **Avoid state duplication** by using `st.session_state` for shared data storage.
+- Use descriptive names (e.g., `show_chart`, `get_data`) and lowercase with underscores for directories and files.
+
+Python/Streamlit
+- Use **functional programming** for defining Streamlit components.
+- Use **type hints** for function signatures and arguments for clarity.
+- **File structure**: 
+  - `app.py` for the main application.
+  - Separate utility functions and data processing logic into `utils.py`.
+  - Use `pages` subdirectory for multi-page apps with `streamlit-multipage`.
+- **Avoid nested callbacks**; use callbacks in `st.button`, `st.selectbox` or custom widgets judiciously.
+
+Error Handling and Validation
+- Prioritize **error handling and edge cases** at the beginning of functions and components.
+  - Use `try-except` blocks to catch errors and display user-friendly messages using `st.error()`.
+  - Validate user input using assertions or custom validation functions and show warnings using `st.warning()`.
+
+Dependencies
+- **Streamlit** (for interactive web applications)
+- **Pandas** (for data manipulation)
+- **Matplotlib, Seaborn, or Plotly** (for data visualization)
+- **Scikit-learn** (for machine learning operations, if applicable)
+- **Altair or Bokeh** (for advanced plotting options)
+- **SQLite3 or SQLAlchemy** (for simple database interactions)
+  
+Streamlit-Specific Guidelines
+- Use **`st.cache_data`** or **`st.cache_resource`** decorators to cache expensive operations like database queries or data transformations.
+- Use **`st.experimental_rerun()`** or **callbacks** to manage dynamic user interactions.
+- Use **`st.sidebar`** for navigation, filtering, or additional settings.
+- Use **`st.session_state`** for storing persistent variables across interactions.
+- **File upload/download**: Implement file upload/download features using `st.file_uploader` and `st.download_button`.
+- **Multi-page apps**: Use `st.experimental_rerun()` or external libraries like `streamlit-multipage` for multi-page navigation.
+- Organize code into separate scripts and import them to the main app.
+
+Performance Optimization
+- Use **caching (`st.cache_data` or `st.cache_resource`)** for computationally expensive operations.
+- **Optimize data loading** by reading only required data columns or rows.
+- Use **vectorized operations** with Pandas or NumPy over iterative loops for data transformations.
+- Avoid **heavy computations** within callbacks; delegate such operations to external processes or cloud resources.
+- Use **asynchronous APIs** (e.g., `asyncio`) for non-blocking I/O operations, if applicable.
+
+Key Conventions
+1. **Modularize the application**: Break down the code into logical sections and use helper functions.
+2. **Use `st.sidebar`** to organize configuration and filtering options.
+3. **Use session state (`st.session_state`)** to persist data and manage interactivity across different widgets.
+4. **Favor component-based design**: Build reusable components like charts, tables, or form sections.
+
+Database Interaction
+- Use **SQLite3** or lightweight databases like **SQLAlchemy** for interacting with structured data.
+- Use **SQL queries** or ORM methods to fetch data and show it using Streamlit widgets like `st.table` or `st.dataframe`.
+
+Visualization and Interactivity
+- Use **Altair, Plotly, or Matplotlib** for visualizations and embed them using `st.altair_chart`, `st.plotly_chart`, or `st.pyplot`.
+- **Interactive widgets**: Use widgets like `st.slider`, `st.selectbox`, and `st.radio` for better UX.
+- Implement **dynamic interactions** using callbacks or Streamlit event listeners.
+
+Testing
+- Write unit tests for utility functions using `pytest`.
+- Use `streamlit.testing` module for testing Streamlit components and interactive workflows.
+- Implement data testing using `pytest` to validate data transformations and visualizations.
+
+Deployment
+- Deploy using **Streamlit Cloud**, **Heroku**, or **AWS App Runner** for quick deployment.
+- Use **Docker** for containerizing applications and ensuring consistency in deployments.
+- Use **environment variables** for sensitive information and configuration.
+
+Streamlit Documentation
+- Refer to [Streamlit Documentation](https://docs.streamlit.io/) for detailed information on widgets, layouts, and deployment options.
