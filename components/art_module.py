@@ -4,6 +4,8 @@ from art.attacks.evasion import FastGradientMethod, ProjectedGradientDescent, De
 from art.estimators.classification import KerasClassifier
 import tensorflow as tf
 
+
+
 def display_art_section():
     st.title("Adversarial Robustness Toolbox (ART)")
     
@@ -24,7 +26,9 @@ def display_art_section():
 
     # Model Configuration
     st.write("### 1. Model Configuration")
-    model_path = st.text_input("Model Path", help="Enter the path to your Keras model file (.h5)")
+    model_path = st.text_input("Model Path", help="Enter the path to your Keras model file (.h5)")  # Model Upload
+    st.write("Upload Model File")
+    # model_path = st.file_uploader("Upload Model File", type=["pkl", "joblib", "h5", "pt"])
 
     # Attack Selection
     st.write("### 2. Choose Attack Type")
@@ -58,7 +62,6 @@ def display_art_section():
     # Sample Input
     st.write("### 4. Provide Sample Input")
     sample_input = st.file_uploader("Upload sample image", type=["jpg", "png"])
-
     # Run Attack
     if st.button("Run ART Attack"):
         if not model_path or not sample_input:

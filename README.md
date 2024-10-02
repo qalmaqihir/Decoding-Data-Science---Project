@@ -1,6 +1,6 @@
 # Project Proposal
 
-##Path Chosen:
+## Path Chosen:
 - LLM/API Path
 
 ## Project Concept
@@ -47,6 +47,6 @@ This module will host a comprehensive suite of tests, each designed to evaluate 
 -  Frontend : A clean, intuitive UI built using Streamlit or ReactJS, enabling users to seamlessly select models, run tests, and review results.
 -  Backend : A robust backend built with Python and FastAPI or Flask, ensuring smooth execution of vulnerability tests and report generation.
 
-### Future Enhancements:
+## Future Enhancements:
 -  Community-Driven Test Expansion : Enable the community to contribute new tests and vulnerabilities, making the platform adaptable to emerging threats.
 -  Advanced Reporting and Visualization : Implement interactive dashboards and visual reports to enhance user experience and insights.
