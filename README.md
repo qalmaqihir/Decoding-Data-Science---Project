@@ -1,6 +1,8 @@
-# Project Proposal
 
-![LLM Project GIF](./llm-app.gif)
+<details>
+
+# Project Proposal
+<summary>Project Proposal</summary>
 
 ## Path Chosen:
 - LLM/API Path
@@ -52,3 +54,83 @@ This module will host a comprehensive suite of tests, each designed to evaluate 
 ## Future Enhancements:
 -  Community-Driven Test Expansion : Enable the community to contribute new tests and vulnerabilities, making the platform adaptable to emerging threats.
 -  Advanced Reporting and Visualization : Implement interactive dashboards and visual reports to enhance user experience and insights.
+</details>
+
+<details>
+
+# Streamlit App Setup Guide
+
+<summary>Streamlit App Setup Guide</summary>
+
+## Prerequisites
+
+- Python 3.11 or higher
+- Docker (for Docker setup)
+- Git (for cloning the repository)
+
+## Simple Setup (Without Docker)
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/streamlit-app.git
+   cd streamlit-app
+   ```
+
+2. **Set Up a Virtual Environment (Optional but Recommended)**:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   ```
+
+3. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the Streamlit App**:
+   ```bash
+   streamlit run app.py
+   ```
+
+5. **Access the App**:
+   Open your web browser and navigate to [http://localhost:8501](http://localhost:8501).
+
+---
+
+## Docker Setup
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/streamlit-app.git
+   cd streamlit-app
+   ```
+
+2. **Build the Docker Image**:
+   ```bash
+   docker build -t streamlit-app .
+   ```
+
+3. **Run the Docker Container**:
+   ```bash
+   docker run -p 8501:8501 streamlit-app
+   ```
+
+4. **Access the App**:
+   Open your web browser and navigate to [http://localhost:8501](http://localhost:8501).
+
+---
+
+## Notes
+
+- Ensure that your Docker daemon is running before building or running the Docker container.
+- For any issues, refer to the console output for error messages or logs.
+```
+
+### Customization
+- Replace `yourusername` with your actual GitHub username.
+- Adjust any instructions if your app requires additional steps or configurations.
+
+This format provides clear instructions for users on how to set up your Streamlit app in both environments. Let me know if you need any further modifications!
+
+
+</details>
