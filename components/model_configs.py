@@ -1,4 +1,3 @@
-# model_configs.py
 
 import os
 import openai
