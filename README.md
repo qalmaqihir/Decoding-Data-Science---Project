@@ -3,7 +3,9 @@
 ![](llm-app_.gif)
 
 <details>
+
 # Project Proposal
+
 <summary>Project Proposal</summary>
 
 ## Path Chosen:
@@ -113,6 +115,23 @@ This module will host a comprehensive suite of tests, each designed to evaluate 
    ```bash
    docker build -t streamlit-app .
    ```
+	   
+	> If you got this error:
+	```
+	... object at 0x71c68dd82c90>: Failed to establish a new connection: [Errno -3] Tempora
+	 => => # ry failure in name resolution')': /simple/absl-py/                                       
+	 => => # WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) a
+	 => => # fter connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConne
+	 => => # ction object at 0x71c68dd83750>: Failed to establish a new connection: [Errno -3] Tempora
+	 => => # ry failure in name resolution')': /simple/absl-py/ 
+	...
+	```
+	Either your wifi/internet is not working. Check for it using `ping google.com`
+
+	If your internet is working fine and you still get the above error then try the solution below:
+
+	`docker build --network=host -t streamlit-app .`
+	 
 
 3. **Run the Docker Container**:
    ```bash
