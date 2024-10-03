@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+import art 
 from art.attacks.evasion import FastGradientMethod, ProjectedGradientDescent, DeepFool, CarliniL2Method
 from art.estimators.classification import KerasClassifier
 import tensorflow as tf

@@ -1,6 +1,6 @@
 # Project Proposal
 
-![LLM Project GIF](./llm-project.gif)
+![LLM Project GIF](./llm-app.gif)
 
 ## Path Chosen:
 - LLM/API Path
