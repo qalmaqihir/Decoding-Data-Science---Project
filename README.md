@@ -1,6 +1,8 @@
+# Project Proposal
+
+![](llm-app_.gif)
 
 <details>
-
 # Project Proposal
 <summary>Project Proposal</summary>
 
@@ -56,6 +58,8 @@ This module will host a comprehensive suite of tests, each designed to evaluate 
 -  Advanced Reporting and Visualization : Implement interactive dashboards and visual reports to enhance user experience and insights.
 </details>
 
+# Streamlit App Setup Guide
+
 <details>
 
 # Streamlit App Setup Guide
@@ -72,8 +76,8 @@ This module will host a comprehensive suite of tests, each designed to evaluate 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/streamlit-app.git
-   cd streamlit-app
+   git clone https://github.com/qalmaqihir/Decoding-Data-Science---Project
+   cd Decoding-Data-Science---Project
    ```
 
 2. **Set Up a Virtual Environment (Optional but Recommended)**:
@@ -118,13 +122,12 @@ This module will host a comprehensive suite of tests, each designed to evaluate 
 4. **Access the App**:
    Open your web browser and navigate to [http://localhost:8501](http://localhost:8501).
 
----
 
 ## Notes
 
 - Ensure that your Docker daemon is running before building or running the Docker container.
 - For any issues, refer to the console output for error messages or logs.
-```
+
 
 ### Customization
 - Replace `yourusername` with your actual GitHub username.
