@@ -147,12 +147,4 @@ This module will host a comprehensive suite of tests, each designed to evaluate 
 - Ensure that your Docker daemon is running before building or running the Docker container.
 - For any issues, refer to the console output for error messages or logs.
 
-
-### Customization
-- Replace `yourusername` with your actual GitHub username.
-- Adjust any instructions if your app requires additional steps or configurations.
-
-This format provides clear instructions for users on how to set up your Streamlit app in both environments. Let me know if you need any further modifications!
-
-
 </details>
