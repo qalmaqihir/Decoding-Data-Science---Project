@@ -74,7 +74,7 @@ This module will host a comprehensive suite of tests, each designed to evaluate 
 - Docker (for Docker setup)
 - Git (for cloning the repository)
 
-## Simple Setup (Without Docker)
+## Simple Setup
 
 1. **Clone the Repository**:
    ```bash
@@ -92,6 +92,18 @@ This module will host a comprehensive suite of tests, each designed to evaluate 
    ```bash
    pip install -r requirements.txt
    ```
+   > Important: 
+   **Installing and configuring Counterfit**  
+   ```bash
+      sudo apt install python3.8 python3.8-venv
+      python -m venv counterfit
+      git clone -b main https://github.com/Azure/counterfit.git
+      cd counterfit
+      pip install .[dev]
+      python -c "import nltk;  nltk.download('stopwords')"
+   ```
+
+   > Know more about installation of Counterfit [here](https://github.com/Azure/counterfit/?tab=readme-ov-file#option-2-using-linux-or-windows-using-wsl-locally)
 
 4. **Run the Streamlit App**:
    ```bash
