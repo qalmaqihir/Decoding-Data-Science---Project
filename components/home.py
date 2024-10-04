@@ -7,6 +7,7 @@ def display_home():
         """
         This platform allows you to test your AI models for vulnerabilities using state-of-the-art tools:
         - **Most Common LLM Attacks**
+        - **LLM vulnerability scanner**  
         - **Adversarial Robustness Toolbox (ART)** for adversarial attack simulations.
         - **Counterfit** for attack surface exploration.
         - **PyRIT** for risk identification and compliance evaluation.
@@ -18,14 +19,14 @@ def display_home():
 
     # Quick Start Section
     st.subheader("Quick Start")
-    col1, col2, col3, col4,col5, col6  = st.columns(6)
+    col1, col2, col3, col4, col5, col6, col7  = st.columns(7)
     with col1:
         st.button("Run Most Common LLM Attacks")
     with col2:
         st.button("Run Adversarial Robustness Toolbox")
      
     with col3:
-        st.button("Run Counterfit")
+        st.button("Run Garak")
 
     with col4:
         st.button("Run PyRIT")
@@ -34,6 +35,8 @@ def display_home():
         st.button("Run Model Scan") 
 
     with col6:
+        st.button("Run Counterfit")
+    with col7:
         st.button("Get Results & Reports")
 
     # Display recent activity
